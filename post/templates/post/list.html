@@ -1,0 +1,17 @@
+{% exends "post/_base.html"%}
+
+{% load static%}
+
+{% block content%}
+
+<h1>Posts: </h1>
+<ul>
+{% for post in posts%}
+    <li>  {{ post.title }} </li>
+    <img src" {{ post.image.url }}" alt= "">
+{% empty %}
+    <li>  No posts.yet </li>
+{% endfor%}
+</ul>
+
+<hr> {% endblock content %} </hr>

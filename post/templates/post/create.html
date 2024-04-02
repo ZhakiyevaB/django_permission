@@ -1,0 +1,14 @@
+{% exends "post/_base.html"%}
+
+{% load static%}
+
+{% block content%}
+
+<h1>New post </h1>
+
+<form action="", method="post">   {% csrf_token %}
+    {{ form.ap_p}}
+    <input type='submit' value="Create">
+</form>
+
+ {% endblock content %} 
